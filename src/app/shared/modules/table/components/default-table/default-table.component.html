@@ -1,0 +1,15 @@
+<table class="table table-inverse">
+  <thead>
+  <tr>
+      <th scope="col" *ngFor="let header of tableStructure">{{header.value}}</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of data">
+      <td *ngFor="let col of item.row">
+          <p *ngIf="col.type == 'text'">{{col.value}}</p>
+          <a class="btn" *ngIf="col.type == 'button'">{{col.value}}</a>
+        </td>
+  </tr>
+  </tbody>
+</table>

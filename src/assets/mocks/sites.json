@@ -1,0 +1,73 @@
+{
+    "message": "success",
+    "data": {
+      "items": [
+        {
+          "site": {
+            "siteId": "937323",
+            "siteName": "TEST CENTRAL SITE IVPN",
+            "siteReference": "TEST IVPN SITE",
+            "siteType": "CENTRAL",
+            "siteCusType": null,
+            "siteCusReference": "Test iVPN2"
+          },
+          "address": {
+            "adrStreetName": "85 RURAL LANE FIRST CROSS",
+            "adrStreetNumber": "12",
+            "adrSitePremises": "HOME",
+            "adrTown": "UK",
+            "adrCounty": "United Kingdom",
+            "addressZipCode": "S6 4BJ",
+            "adrCountry": null,
+            "lat": null,
+            "lng": null,
+            "siteCustomerRegion": "EUROPE"
+          }
+        },
+        {
+          "site": {
+            "siteId": "962885",
+            "siteName": "EDCA TEST SITE",
+            "siteReference": "178350",
+            "siteType": "CLIENT",
+            "siteCusType": null,
+            "siteCusReference": null
+          },
+          "address": {
+            "adrStreetName": "BOERHAAVELAAN 7",
+            "adrStreetNumber": "5",
+            "adrSitePremises": "EDCA TEST HOME",
+            "adrTown": "AMSTERDAM",
+            "adrCounty": "NETHERLANDS",
+            "addressZipCode": "1234 AB",
+            "adrCountry": null,
+            "lat": null,
+            "lng": null,
+            "siteCustomerRegion": null
+          }
+        },
+        {
+          "site": {
+            "siteId": "135768",
+            "siteName": "ALNESS",
+            "siteReference": "177299",
+            "siteType": "CLIENT",
+            "siteCusType": null,
+            "siteCusReference": null
+          },
+          "address": {
+            "adrStreetName": "HIGH STREET",
+            "adrStreetNumber": "99",
+            "adrSitePremises": "THE NUT TREE",
+            "adrTown": "ALNESS",
+            "adrCounty": "ABERDEENSHIRE",
+            "addressZipCode": "IV17 0SH",
+            "adrCountry": null,
+            "lat": null,
+            "lng": null,
+            "siteCustomerRegion": "EUROPE"
+          }
+        }
+      ]
+    }
+  }
