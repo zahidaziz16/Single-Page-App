@@ -3,7 +3,9 @@ import { CommonModule } from '@angular/common';
 import { ChartsModule as Ng2Charts } from 'ng2-charts';
 import { SpaRoutingModule } from './spa-routing.module';
 import { FeedsCardModule } from '../shared/modules/feeds-card/feeds-card.module';
-//import { BarChartModule } from '../shared/modules/bar-chart/bar-chart.module';
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import { BarChartModule } from '../shared/modules/bar-chart/bar-chart.module';
+import { UIDropdownModule } from '../shared/modules/dropdown/ui-dropdown.module';
 import { SpaComponent } from './spa.component';
 
 @NgModule({
@@ -12,7 +14,9 @@ import { SpaComponent } from './spa.component';
     Ng2Charts,
     SpaRoutingModule,
     FeedsCardModule,
-    //BarChartModule
+    NgbModule.forRoot(),
+    BarChartModule,
+    UIDropdownModule
   ],
   declarations: [SpaComponent]
 })

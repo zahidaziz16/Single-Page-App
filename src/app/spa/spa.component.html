@@ -1,17 +1,17 @@
 <div class="row">
-
         <div class="col col-md-6">
             <div class="card mb-3">
                 <div class="card-header">
                     News Feeds
                 </div>
                 <div class="card-body">
+                    <app-default-dropdown [data]="dropdownData" (dropdownListener)=onDropdownListener($event)></app-default-dropdown>
+                    <br/>
                     <app-default-feeds-card [data]="feeds"></app-default-feeds-card>
                 </div>
                 <div class="card-footer">
                 </div>
-            </div>
-                
+            </div> 
         </div>
         <div class="col col-md-6">
             <div class="card mb-3">
@@ -19,10 +19,9 @@
                     Feeds Analytics
                 </div>
                 <div class="card-body">
-                    <!-- <app-default-bar-chart [data]="chartMetadata"></app-default-bar-chart>
-                    {{chartMetadata}} -->
-                    <canvas *ngIf="chartMetadata" baseChart [datasets]="chartMetadata.data" [labels]="chartMetadata.labels" [options]="chartMetadata.options" [legend]="chartMetadata.legend" [chartType]="chartMetadata.type">
-                            </canvas>
+                    <div class="row">
+                        <app-default-bar-chart class="col" *ngIf="chartMetadata" [data]="chartMetadata"></app-default-bar-chart>
+                    </div>
                 </div>
                 <div class="card-footer">
                 </div>

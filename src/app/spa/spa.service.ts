@@ -17,4 +17,8 @@ export class SpaService {
     return this.http.get('https://newsapi.org/v2/everything?q=bitcoin&from='+data+'&sortBy=title&apiKey=5f9c5851af214f67b123ea357d502dc5');
   }
 
+  getFeedsSortBy(sort): Observable<any>{
+    return this.http.get('https://newsapi.org/v2/everything?q=bitcoin&from=2018-10-15&sortBy='+sort+'&apiKey=5f9c5851af214f67b123ea357d502dc5');
+  }
+
 }

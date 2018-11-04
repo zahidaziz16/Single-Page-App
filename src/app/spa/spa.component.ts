@@ -14,6 +14,21 @@ import { SpaService } from './spa.service';
     public novFeeds:number;
     public chartMetadata:any;
 
+    public dropdownData = [
+        {
+            name:'Author',
+            value: 'author'
+        },
+        {
+            name:'Date',
+            value: 'publishedAt'
+        },
+        {
+            name:'Title',
+            value: 'title'
+        },
+    ]
+
     ngOnInit() {
         this.service.getFeedsByMonth('2018-10-15').subscribe((response)=>{
             this.feeds = response.articles;
@@ -50,5 +65,12 @@ import { SpaService } from './spa.service';
 
         
 
+    }
+
+    onDropdownListener(data){
+        this.service.getFeedsSortBy(data).subscribe((response)=>{
+            this.feeds = response.articles;
+            console.log(this.feeds);
+        });
     }
 }

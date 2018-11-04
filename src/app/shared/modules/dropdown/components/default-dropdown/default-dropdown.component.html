@@ -1,0 +1,6 @@
+<div ngbDropdown class="d-inline-block dropdown">
+    <button class="btn btn-outline-primary" ngbDropdownToggle>Sort By</button>
+    <div ngbDropdownMenu>
+        <button *ngFor="let item of data" class="dropdown-item" (click)="onClick($event,item.value)">{{item.name}}</button>
+    </div>
+</div>
