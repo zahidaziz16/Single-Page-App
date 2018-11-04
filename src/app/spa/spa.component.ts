@@ -43,8 +43,6 @@ import { SpaService } from './spa.service';
 
                 this.octFeeds = this.octFeeds - this.novFeeds;
 
-                console.log("Oct Feeds = ",this.octFeeds," Nov Feeds = ",this.novFeeds);
-
                 this.chartMetadata = {
                     type : 'bar',
                     legend: true,
@@ -70,7 +68,6 @@ import { SpaService } from './spa.service';
     onDropdownListener(data){
         this.service.getFeedsSortBy(data).subscribe((response)=>{
             this.feeds = response.articles;
-            console.log(this.feeds);
         });
     }
 }

@@ -10,13 +10,9 @@ export class DefaultDropdownComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    
-    console.log("Data table : ",this.data);
-  }
+  ngOnInit() {}
 
   onClick(e,data){
-    console.log("Data sort by : ",data);
     this.dropdownListener.emit(data);
   }
 
