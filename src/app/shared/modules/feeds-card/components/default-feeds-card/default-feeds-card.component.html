@@ -1,0 +1,8 @@
+<div class="list-group">
+    <a href="javascript:void(0)" *ngFor="let item of data" class="list-group-item">
+        <h4 class="list-group-item-heading">{{item.title}}</h4>
+        <p class="list-group-item-text">{{item.description}}</p>
+        <br/>
+        <p class="text-right">{{item.author}}<br/><i>- {{item.source.name}}</i></p>
+    </a>
+</div>

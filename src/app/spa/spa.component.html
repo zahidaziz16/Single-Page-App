@@ -1,0 +1,35 @@
+<div class="row">
+
+        <div class="col col-md-6">
+            <div class="card mb-3">
+                <div class="card-header">
+                    News Feeds
+                </div>
+                <div class="card-body">
+                    <app-default-feeds-card [data]="feeds"></app-default-feeds-card>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-info btn-sm" >Update</button>
+                </div>
+            </div>
+                
+        </div>
+        <div class="col col-md-6">
+            <div class="card mb-3">
+                <div class="card-header">
+                    Feeds Analytics
+                </div>
+                <div class="card-body">
+                    <!-- <app-default-bar-chart [data]="chartMetadata"></app-default-bar-chart>
+                    {{chartMetadata}} -->
+                    <canvas *ngIf="chartMetadata" baseChart [datasets]="chartMetadata.data" [labels]="chartMetadata.labels" [options]="chartMetadata.options" [legend]="chartMetadata.legend" [chartType]="chartMetadata.type">
+                            </canvas>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-info btn-sm">Update</button>
+                </div>
+            </div>
+        </div>
+      
+
+</div>
